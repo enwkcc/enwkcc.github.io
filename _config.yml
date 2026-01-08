@@ -1,0 +1,7 @@
+title: "我的技术博客"
+description: "记录学习之路"
+baseurl: ""
+url: "https://你的用户名.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
