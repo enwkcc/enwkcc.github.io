@@ -1,7 +1,50 @@
-title: "我的技术博客"
-description: "记录学习之路"
-baseurl: ""
-url: "https://enwkcc.github.io"
-theme: minima
+#
+# 核心站点设置 (必填)
+# ---------------------------------------------------------------
+title: "翼恩网络"          # 浏览器标签栏显示的名字
+name: "鹏总"              # 文章底部或侧边栏显示的作者名
+email: enwkcc@163.com         # 你的邮箱（用于联系或Gravatar头像）
+description: >-               # 网站描述（会显示在搜索引擎结果里）
+  记录生活、技术分享与学习笔记。
+baseurl: ""                   # 除非你的博客建在子目录下，否则留空
+url: "https://enwkcc.github.io" # 你的网站域名（必须写对，否则图片可能无法加载）
+
+#
+# 社交媒体链接 (根据你使用的主题，可能会在侧边栏或页脚显示图标)
+# ---------------------------------------------------------------
+twitter_username: 你的TwitterID
+github_username:  你的GitHub用户名
+# instagram_username: enwkcc
+# linkedin_username: 你的LinkedInID
+
+#
+# 外观与主题设置
+# ---------------------------------------------------------------
+theme: minima                 # 如果你用的是默认主题，保留这行；如果是Fork别人的主题，通常要删掉这行
+permalink: /:title.html       # 文章链接的格式（这是简洁的格式）
+paginate: 5                   # 首页每页显示几篇文章
+paginate_path: "/page/:num/"  # 分页的URL路径
+
+#
+# 插件设置 (GitHub Pages 常用)
+# ---------------------------------------------------------------
 plugins:
-  - jekyll-feed
+  - jekyll-feed               # 生成RSS订阅
+  - jekyll-paginate           # 分页功能
+  - jekyll-seo-tag            # 自动优化SEO标题
+
+#
+# 高级设置 (新手通常不需要修改)
+# ---------------------------------------------------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true             # 如果你不想代码高亮，可以设为true
+
+# 时区设置 (解决文章时间显示不对的问题)
+timezone: Asia/Shanghai
+
+# 评论系统 (以 Disqus 为例，如果有需要再填)
+# disqus:
+#   shortname: 你的DisqusID
